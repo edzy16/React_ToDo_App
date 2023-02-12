@@ -4,7 +4,7 @@ Getting Started
 
 To get started, clone the repository to your local machine using the following command:
 
-```git clone https://github.com/edzy16/react-todo-app.git```
+```git clone https://github.com/edzy16/React_ToDo_App.git```
 
 Next, navigate to the project directory and install the dependencies using npm:
 
