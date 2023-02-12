@@ -4,20 +4,16 @@ Getting Started
 
 To get started, clone the repository to your local machine using the following command:
 
-bash
-
-git clone https://github.com/edzy16/react-todo-app.git
+```git clone https://github.com/edzy16/react-todo-app.git```
 
 Next, navigate to the project directory and install the dependencies using npm:
 
-bash
-
-cd react-todo-app
-npm install
+```cd react-todo-app```
+```npm install```
 
 Finally, start the development server with the following command:
 
-npm run dev
+```npm run dev```
 
 The app will now be running at http://localhost:3000 in your browser.
 Firebase Hosting
