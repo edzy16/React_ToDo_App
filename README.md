@@ -1,5 +1,5 @@
 # React_ToDo_App
-This is a simple todo app built using React and hosted on Firebase. The project was built using the Vite tool for quick and efficient development.
+This is a simple todo app built using React and hosted on Firebase. The project was built using the Vite tool for quick and efficient development.The live version of the app is available at https://react-todo-app-259e9.web.app/
 Getting Started
 
 To get started, clone the repository to your local machine using the following command:
