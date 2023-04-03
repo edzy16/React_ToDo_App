@@ -14,11 +14,21 @@ function App() {
         <h2>Don't forget to 🌝 ☕ </h2>
       </div>
       <div className="input">
-        <input value={toDo} onChange={(e)=>setToDo(e.target.value)} type="text" placeholder="🖊️ Add item..." />
-        <i onClick={() => setToDos([...toDos, {id:Date.now(), text: toDo, status: false }])} className="fas fa-plus"></i>
+        <input
+          value={toDo}
+          onChange={(e) => setToDo(e.target.value)}
+          type="text"
+          placeholder="🖊️ Add item..."
+        />
+        <i
+          onClick={() =>
+            setToDos([...toDos, { id: Date.now(), text: toDo, status: false }])
+          }
+          className="fas fa-plus"
+        ></i>
       </div>
       <div className="todos">
-        {toDos.map((obj)=>{
+        {toDos.map((obj) => {
           return (
             <div className="todo">
               <div className="left">
@@ -62,11 +72,9 @@ function App() {
         })}
         {toDos.map((obj) => {
           if (obj.status) {
-            return (
-              <h1>{obj.text}</h1>
-            )
+            return <h1>{obj.text}</h1>;
           }
-          return null
+          return null;
         })}
       </div>
     </div>
