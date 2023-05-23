@@ -20,6 +20,13 @@ function App() {
           type="text"
           placeholder="🖊️ Add item..."
         />
+        {/* This code is rendering an icon element with a class name "fas fa-plus" and an onClick event
+        listener. When the icon is clicked, the onClick event listener triggers an arrow function
+        that updates the state of the toDos array using the setToDos function. The new state of the
+        toDos array is created by spreading the existing toDos array and adding a new object with
+        three properties: id (generated using the Date.now() method), text (set to the current value
+        of the toDo state), and status (set to false). This allows the user to add a new to-do item
+        to the list by clicking on the plus icon. */}
         <i
           onClick={() =>
             setToDos([...toDos, { id: Date.now(), text: toDo, status: false }])
@@ -53,9 +60,15 @@ function App() {
                 <p>{obj.text}</p>
               </div>
               <div className="right">
+                {/* This is rendering an icon element with a unique id and a class name. It also has an
+                onClick event listener that triggers a function when the icon is clicked. The
+                function finds the index of the object in the toDos array that has the same id as
+                the clicked icon, removes that object from the array using the splice method, and
+                updates the state of the toDos array using the setToDos function. This allows the
+                user to delete a to-do item from the list by clicking on the corresponding icon. */}
                 <i
                   id={obj.id}
-                  className="fas fa-times"
+                  className="fas fa-times" 
                   onClick={(e) => {
                     let index = toDos.findIndex((obj) => {
                       return obj.id == e.target.id;
